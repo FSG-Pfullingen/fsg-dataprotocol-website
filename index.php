@@ -1,3 +1,24 @@
+<?php
+$t = $_GET['t'];
+if($t>5) {
+?>                          ,     \    /      
+                         / \    )\__/(     / \   
+                        /   \  (_\  /_)   /   \               
+     __________________/_____\__\@  @/___/_____\_________________
+     |                          |\../|                          |
+     |                           \VV/                           |
+     |          Hello. Do you like FSG-DataProtocol?            |
+     |                                                          |
+     |              Please star us. Thank you.                  |
+     |                            <p>&#55357;&#56834;</p>                            |
+     |__________________________________________________________|
+                   |    /\ /      \\       \ /\    |
+                   |  /   V        ))       V   \  |
+                   |/     `       //        '     \|
+                   `              V                ' 
+<?php
+else {
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -46,9 +67,10 @@ function MouseoverMessageInAlertBox()
 <span class="likebtn-wrapper" data-theme="disk" data-i18n_like="Like" data-white_label="true" data-identifier="fsgdp01" data-dislike_enabled="false" data-icon_dislike_show="false" data-voting_frequency="555555" data-counter_frmt="km" data-item_url="http://partyguy01.github.io/fsg-dataprotocol-website" data-item_title="FSG-DataProtocol" data-item_description="The Data-Transfer-Protocol made by the FSG-Pfullingen Computer Science Club 2017."></span>
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
-	
+	<small><a href="http://fsgdp.gq/?t=<?php echo $t++; ?>">Back to top</a></small>
 	<br><script type="text/javascript" src="http://counter.websiteout.net/js/35/0/0/0"></script>
 </div>
 
 	</body>
 </html>
+<?php } ?>
